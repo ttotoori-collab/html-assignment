@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Flex Basics (Pastel)</title>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    padding: 24px;
+  }
+
+  /* CSS: 부모에게 flex 지시 */
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .container > div {
+    padding: 16px 24px;
+    border-radius: 6px;
+    color: #3a3a3a;        /* 배경이 밝으니 글자는 진한 회색 */
+  }
+
+  /* 박스마다 다른 배경색 (파스텔톤) */
+  .container > div:nth-child(1) { background-color: #f8c8dc; } /* 핑크 */
+  .container > div:nth-child(2) { background-color: #c3e6c9; } /* 초록 */
+  .container > div:nth-child(3) { background-color: #d6c7ef; } /* 보라 */
+</style>
+</head>
+<body>
+  <!-- HTML: 박스 3개를 감싸는 부모 -->
+  <div class="container">
+    <div>박스1</div>
+    <div>박스2</div>
+    <div>박스3</div>
+  </div>
+</body>
+</html>
